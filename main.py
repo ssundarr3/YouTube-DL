@@ -40,7 +40,7 @@ def savvid(url, quality, name):
 
 q="q"
 while(q != "quit"):
-    c1 = input("playlist or single video?\n Enter 1 for playlist 2 for single video... ")
+    c1 = input("playlist or single video?\nEnter 1 for playlist 2 for single video... ")
     if(c1.isdigit()):
         c1 = int (c1)
     else:
@@ -49,6 +49,7 @@ while(q != "quit"):
         c2_url = input("\nEnter the playlist page's url ")
         c2_quality = input("Enter the quality eg  .mp4, .flv, .web ")
         c2_start = input("\nEnter the video to start from (Enter 1 to start downloading from the beginning... ")
+        c2_start = int(c2_start)
         playlist(c2_url, c2_quality, c2_start)
     elif(c1 == 2):
         c3_url = input("\nEnter the YouTube page's url ")
